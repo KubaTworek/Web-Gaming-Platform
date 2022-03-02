@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="additional-container">
+        <div class="background"></div>
+        <div class="name-editor">
+            <p class="name-editor__text">Choose your name</p>
+            <label for="player-name__input" id="player-name__label" class="name-editor__label">Player name</label>
+            <input type="text" name="player-name__input" id="player-name__input" class="name-editor__input">
+            <p id="warning-alert" class="hidden">Please enter a valid name!</p>
+            <div class="button-container">
+                <button id="cancel-button">Cancel</button>
+                <button id="confirm-button">Confirm</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1 class="header__title">Play Tic, Tac Toe</h1>
+        <p class="header__describe">Built with HTML, CSS, JavaScript and - of course - lots of love!</p>
+    </header>
+    <main>
+        <section>
+            <div class="name-tags">
+                <div class="name-tag">
+                    <p class="player-tag">Player 1</p>
+                    <p id="player-one__tagname" class="player-tagname">PLAYER NAME</p>
+                    <p class="symbol">X</p>
+                    <a id="edit-button__first" class="edit-button">Edit</a>
+                </div>
+                <div class="name-tag">
+                    <p class="player-tag">Player 2</p>
+                    <p id="player-two__tagname" class="player-tagname">PLAYER NAME</p>
+                    <p class="symbol">O</p>
+                    <a id="edit-button__second" class="edit-button">Edit</a>
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="start-button"">Start New Game</button>
+            </div>
+        </section>
+        <section>
+            <div id="winner-board" class="hidden">
+                <h2 id="winner-board__title">You won Player 1</h2>
+                <p class="winner-board__text">Click "Start New Game" to start a new game!</p>
+            </div>
+            <div id="game-turn" class="hidden">
+                <p class="game-turn__text">It's your turn <span id="player-turn">Player 1</span></p>
+            </div>
+        </section>
+        <section>
+            <div id="game-board" class="hidden">
+                <div class="board">
+                    <div class="place"></div>
+                    <div class="place"></div>
+                    <div class="place"></div>
+                    <div class="place"></div>
+                    <div class="place"></div>
+                    <div class="place"></div>
+                    <div class="place"></div>
+                    <div class="place"></div>
+                    <div class="place"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

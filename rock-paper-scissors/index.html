@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors Game</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="header__title">Play Rock, Paper, Scissors</h1>
+        <p class="header__describe">Built with HTML, CSS, JavaScript and - of course - lots of love!</p>
+    </header>
+    <main>
+        <section>
+            <div class="button-container">
+                <button id="start-button"">Start New Game</button>
+            </div>
+        </section>
+        <section>
+            <div id="game-board">
+                <div class="players-choice">
+                    <div>
+                        <h2>Player</h2>
+                        <div id="player-choice" class="choice-place"></div>
+                    </div>
+                    <div>
+                        <h2>Computer</h2>
+                        <div id="computer-choice" class="choice-place"></div>  
+                    </div>
+                </div>
+                <section>
+                    <div id="winner-board" class="board hidden">
+                        <h2 id="winner-board__title">You won Player 1</h2>
+                        <p class="winner-board__text">Click "Start New Game" to start a new game!</p>
+                    </div>
+                    <div id="turn-board" class="board hidden">
+                        <h2>Choose your thing!</h2>
+                    </div>
+                </section>
+                <div id="things-to-choose" class="hidden">
+                    <div id="rock" class="to-choose">✊</div>
+                    <div id="paper" class="to-choose">🖐️</div>
+                    <div id="scissors" class="to-choose">✌</div>
+                </div>
+            
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
